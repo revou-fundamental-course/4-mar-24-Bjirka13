@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hias.css">
+    <title>Kalkulator BMI</title>
+</head>
+<body>
+    
+    <div class="container">
+      <div class="box">
+          <h1>Kalkulator BMI</h1>
+      <div class="content">
+      <div class="input">
+                <label for="umur">Usia</label>
+                <input type="text" class="text-input" id="umur" autocomplete="off" required/>
+        </div>
+        <div class="gender">
+                <label class="container">
+            <input type="radio" name="radio" id="l"><p class="text">Laki-laki</p>
+           <span class="checkmark"></span>
+            </label>
+
+        <label class="container">
+        <input type="radio" name="radio" id="p" ><p class="text">Perempuan</p>
+       <span class="checkmark"></span>
+        </label>
+        </div>
+
+        <div class="containerHW">
+        <div class="inputH">
+              <label for="tinggi">Tinggi (cm)</label>
+              <input type="number" id="tinggi" required>
+        </div>
+
+        <div class="inputW">
+              <label for="BB">Berat (kg)</label>
+              <input type="number" id="BB" required>
+        </div>
+        </div>
+
+            <button class="calculate" id="submit" onclick="hitungBMI();">Hitung BMI</button>
+        </div>
+        <div class="result">
+            <p>BMI Anda adalah</p>
+        <div id="result">00.00</div>
+            <p class="comment"></p>
+        </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+
+</body>
+</html>
